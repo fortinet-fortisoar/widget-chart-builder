@@ -19,6 +19,14 @@
         {
             "type":"verticalsankey",
             "title":"Vertical Sankey"
+        },
+        {
+            "type":"bar",
+            "title":"Grouped Column Bar"
+        },
+        {
+            "type":"bar",
+            "title":"Hierarchical Bar Chart"
         }
     ]
 }

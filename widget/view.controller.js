@@ -44,12 +44,12 @@ Copyright end */
         let files = response.data;
         loadJs(files.libraries).then(function () {
           //console.log('file promise resolved: ')
-          createChartData($scope.config.chartType);
+          createChartData();
         });
       });
     }
 
-    function createChartData(chartType) {
+    function createChartData() {
       $scope.chartData = $scope.config.sourceJson;
       if($scope.chartData['chart']){
         $scope.chartData['chart']['backgroundColor'] = $scope.currentTheme === 'light' ? '#FFFFFF' : '#000000';
@@ -59,7 +59,7 @@ Copyright end */
       }
       
       $scope.chartData['title']['style'] = {'color' : $scope.currentTheme === 'light' ? '#000000' : '#FFFFFF'};
-      console.log(chartType);
+      //console.log(chartType);
       // switch (chartType) {
       //   case 'arcdiagram':
       //     $scope.chartData = $scope.config.sourceJson;
@@ -83,7 +83,7 @@ Copyright end */
         else {
           let moduleChartData = data['hydra:member'][0][$scope.config.customDataField];
           // moduleChartData.bindto = '#highChartpoc-'+config.correlationValue;
-          $scope.chartData.series[0].data = moduleChartData.data;
+          setChartData(moduleChartData);
           $timeout(function () {
             if ($scope.chart) {
               $scope.chart.destroy();
@@ -96,6 +96,17 @@ Copyright end */
             false)
         }
       });
+    }
+
+    function setChartData(moduleChartData) {
+      switch ($scope.config.chartType) {
+        case 'bar':
+          $scope.chartData['series'] = moduleChartData.data;
+          break;
+        default:
+          $scope.chartData.series[0].data = moduleChartData.data;
+          break;
+      }
     }
 
     $scope.$on('$destroy', function () {
