@@ -1,0 +1,13 @@
+/* Copyright start
+    MIT License
+    Copyright (c) 2024 Fortinet Inc
+Copyright end */
+
+.chartBuilderBlock{
+    width:800px;
+    height:400px;
+}
+
+.highcharts-credits{
+    display: none;
+}

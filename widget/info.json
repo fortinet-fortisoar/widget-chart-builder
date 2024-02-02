@@ -1,0 +1,19 @@
+{
+    "name": "chartBuilder",
+    "title": "Chart Builder",
+    "subTitle": "Chart widget to create charts using highcharts library",
+    "version": "1.0.0",
+    "publishedDate": 1706693865,
+    "releaseNotes": "unavailable",
+    "metadata": {
+        "description": "Create charts using highcharts library",
+        "pages": [
+            "Dashboard"
+        ],
+        "certified": "No",
+        "publisher": null,
+        "compatibility": [
+            "cyops"
+        ]
+    }
+}

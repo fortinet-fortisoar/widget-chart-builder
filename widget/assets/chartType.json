@@ -1,0 +1,24 @@
+{
+    "chartTypes": [
+        {
+            "type": "heatMap",
+            "title": "Heat Map"
+        },
+        {
+            "type": "arcdiagram",
+            "title": "Arc Diagram"
+        },
+        {
+            "type": "treemap",
+            "title": "Tree Map"
+        },
+        {
+            "type": "pie",
+            "title": "3D Pie"
+        },
+        {
+            "type":"verticalsankey",
+            "title":"Vertical Sankey"
+        }
+    ]
+}
