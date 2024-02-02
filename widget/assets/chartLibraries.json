@@ -7,7 +7,6 @@
         "https://code.highcharts.com/modules/accessibility.js",
         "https://code.highcharts.com/modules/heatmap.js",
         "https://code.highcharts.com/modules/treemap.js",
-        "https://code.highcharts.com/modules/exporting.js",
         "https://code.highcharts.com/modules/export-data.js",
         "https://code.highcharts.com/modules/sunburst.js"
     ]
