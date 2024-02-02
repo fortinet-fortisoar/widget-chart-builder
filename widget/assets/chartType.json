@@ -1,0 +1,36 @@
+{
+    "chartTypes": [
+        {
+            "type": "heatMap",
+            "title": "Heat Map"
+        },
+        {
+            "type": "arcdiagram",
+            "title": "Arc Diagram"
+        },
+        {
+            "type": "treemap",
+            "title": "Tree Map"
+        },
+        {
+            "type": "pie",
+            "title": "3D Pie"
+        },
+        {
+            "type":"verticalsankey",
+            "title":"Vertical Sankey"
+        },
+        {
+            "type":"bar",
+            "title":"Grouped Column Bar"
+        },
+        {
+            "type":"bar",
+            "title":"Hierarchical Bar"
+        },
+        {
+            "type":"sunburst",
+            "title":"Sunburst"
+        }
+    ]
+}
