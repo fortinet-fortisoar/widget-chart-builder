@@ -26,7 +26,11 @@
         },
         {
             "type":"bar",
-            "title":"Hierarchical Bar Chart"
+            "title":"Hierarchical Bar"
+        },
+        {
+            "type":"sunburst",
+            "title":"Sunburst"
         }
     ]
 }
